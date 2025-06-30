@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Flask 🍓</title>
+  <style>
+    /* Gabungkan semua CSS-mu di sini + style buah */
+    body {
+      background: linear-gradient(120deg, #ffe6f0, #fddde6);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #b03060;
+      text-align: center;
+      font-size: 2.5em;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 700px;
+      margin: 40px auto;
+      box-shadow: 0 8px 16px rgba(255, 192, 203, 0.3);
+    }
+
+    .task {
+      background: #ffe6f0;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    a, button {
+      background-color: #ffb6c1;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      margin-right: 5px;
+      color: #5c3a3a;
+      font-weight: bold;
+    }
+
+    a:hover, button:hover {
+      background-color: #ffa6c1;
+    }
+
+    .actions {
+      margin-top: 10px;
+    }
+
+    h1::before {
+      content: "🍓🍍 ";
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>
